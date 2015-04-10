@@ -2,11 +2,13 @@
 
 > Sort an array of strings by length
 
+
 ## Install
 
-```sh
+```
 $ npm install --save length-sort
 ```
+
 
 ## Usage
 
@@ -20,6 +22,7 @@ var lengthSort = require('length-sort');
 //=> ['abc', 'ab', 'a']
 ```
 
+
 ## API
 
 ### .asc
@@ -29,6 +32,7 @@ Ascending sort.
 ### .desc
 
 Descending sort.
+
 
 ## License
 

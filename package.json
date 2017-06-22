@@ -1,29 +1,30 @@
 {
-  "name": "length-sort",
-  "version": "1.0.0",
-  "description": "Sort an array of strings by length",
-  "license": "MIT",
-  "repository": "kevva/length-sort",
-  "author": {
-    "name": "Kevin Mårtensson",
-    "email": "kevinmartensson@gmail.com",
-    "url": "https://github.com/kevva"
-  },
-  "engines": {
-    "node": ">=0.10.0"
-  },
-  "scripts": {
-    "test": "node test.js"
-  },
-  "files": [
-    "index.js"
-  ],
-  "keywords": [
-    "array",
-    "length",
-    "sort"
-  ],
-  "devDependencies": {
-    "ava": "^0.0.4"
-  }
+	"name": "length-sort",
+	"version": "1.0.0",
+	"description": "Sort an array of strings by length",
+	"license": "MIT",
+	"repository": "kevva/length-sort",
+	"author": {
+		"name": "Kevin Mårtensson",
+		"email": "kevinmartensson@gmail.com",
+		"url": "https://github.com/kevva"
+	},
+	"engines": {
+		"node": ">=4"
+	},
+	"scripts": {
+		"test": "xo && ava"
+	},
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"array",
+		"length",
+		"sort"
+	],
+	"devDependencies": {
+		"ava": "*",
+		"xo": "*"
+	}
 }

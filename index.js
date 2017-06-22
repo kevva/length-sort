@@ -1,9 +1,3 @@
 'use strict';
-
-module.exports.desc = function (a, b) {
-	return b.length - a.length;
-};
-
-module.exports.asc = function (a, b) {
-	return a.length - b.length;
-};
+exports.desc = (a, b) => String(b).length - String(a).length;
+exports.asc = (a, b) => String(a).length - String(b).length;

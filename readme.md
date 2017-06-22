@@ -1,4 +1,4 @@
-# length-sort [![Build Status](http://img.shields.io/travis/kevva/length-sort/master.svg?style=flat)](http://travis-ci.org/kevva/length-sort)
+# length-sort [![Build Status](https://travis-ci.org/kevva/length-sort.svg?branch=master)](https://travis-ci.org/kevva/length-sort)
 
 > Sort an array of strings by length
 
@@ -6,30 +6,30 @@
 ## Install
 
 ```
-$ npm install --save length-sort
+$ npm install length-sort
 ```
 
 
 ## Usage
 
 ```js
-var lengthSort = require('length-sort');
+const lengthSort = require('length-sort');
 
-['ab', 'a', 'abc'].sort(lengthSort.asc);
-//=> ['a', 'ab', 'abc']
+['ab', 'a', 1234, 'abc'].sort(lengthSort.asc);
+//=> ['a', 'ab', 'abc', 1234]
 
-['ab', 'a', 'abc'].sort(lengthSort.desc);
-//=> ['abc', 'ab', 'a']
+['ab', 'a', 1234, 'abc'].sort(lengthSort.desc);
+//=> [1234, 'abc', 'ab', 'a']
 ```
 
 
 ## API
 
-### .asc
+### lengthSort.asc
 
 Ascending sort.
 
-### .desc
+### lengthSort.desc
 
 Descending sort.
 

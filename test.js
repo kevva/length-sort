@@ -1,17 +1,12 @@
-'use strict';
-var test = require('ava');
-var lengthSort = require('./');
+import test from 'ava';
+import m from '.';
 
-test('sort items ascending', function (t) {
-	var arr = ['foobar', 'foo', 'foobarmoo'];
-	var expected = ['foo', 'foobar', 'foobarmoo'];
-	t.assert(arr.sort(lengthSort.asc), expected, arr.sort(lengthSort.asc));
-	t.end();
+const fixture = ['foobar', 'foo', 'foobarmoo', 1234];
+
+test('sort items ascending', t => {
+	t.deepEqual(fixture.sort(m.asc), ['foo', 1234, 'foobar', 'foobarmoo']);
 });
 
-test('sort items descending', function (t) {
-	var arr = ['foobar', 'foo', 'foobarmoo'];
-	var expected = ['foobarmoo', 'foobar', 'foo'];
-	t.assert(arr.sort(lengthSort.asc), expected, arr.sort(lengthSort.asc));
-	t.end();
+test('sort items descending', t => {
+	t.deepEqual(fixture.sort(m.desc), ['foobarmoo', 'foobar', 1234, 'foo']);
 });
